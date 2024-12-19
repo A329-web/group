@@ -2,70 +2,78 @@
 <html>
 
 <head>
-    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+    </script>
+    <style>
+        body {
+            position: relative;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        #section1 {
+            padding-top: 50px;
+            height: 500px;
+            color: white;
+            background-color: orange;
+        }
+
+        #section2 {
+            padding-top: 50px;
+            height: 500px;
+            color: green;
+            background-color: white;
+        }
+    </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <div class="container">
-        <h2>Spinners</h2>
-        <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Codingal</a>
+            </div>
+            <div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#section1">Section 1</a></li>
+                        <li><a href="#section2">Section 2</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-        <div class="spinner-border"></div>
-        
-        <hr>
+    <div id="section1" class="container-fluid">
+        <h1>Section 1</h1>
+        <h3>Codingal</h3>
+        <h5>Codingal is on a mission to inspire school kids to fall in love with coding. Coding is proven to develop
+            creativity, logical thinking and problem solving skills in kids. Coding is an essential skill of the future
+            and more than 60% of all jobs in STEM-related fields require knowledge of code. Kids who start learning to
+            code at a young age are guaranteed to become leaders, creators and entrepreneurs of the future.</h6>
 
-        <div class="spinner-border text-muted"></div>
-        <div class="spinner-border text-primary"></div>
-        <div class="spinner-border text-success"></div>
-        <div class="spinner-border text-info"></div>
-        <div class="spinner-border text-warning"></div>
-        <div class="spinner-border text-danger"></div>
-        <div class="spinner-border text-secondary"></div>
-        <div class="spinner-border text-dark"></div>
-        <div class="spinner-border text-light"></div>
+            <p>Scroll this section.</p>
 
-        <hr>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>Section 2</h1>
+        <h3>Codingal</h3>
+        <h5>Vivek Prakash and Satyam Baranwal are the founders of Codingal.</h6>
 
-        <div class="spinner-grow text-muted"></div>
-        <div class="spinner-grow text-primary"></div>
-        <div class="spinner-grow text-success"></div>
-        <div class="spinner-grow text-info"></div>
-        <div class="spinner-grow text-warning"></div>
-        <div class="spinner-grow text-danger"></div>
-        <div class="spinner-grow text-secondary"></div>
-        <div class="spinner-grow text-dark"></div>
-        <div class="spinner-grow text-light"></div>
+            <p>Scroll this section.</p>
 
-        <hr>
-        <div class="spinner-border spinner-border-sm"></div>
-        <div class="spinner-grow spinner-grow-sm"></div>
-
-
-        <hr>
-
-        <button class="btn btn-primary">
-            <span class="spinner-border spinner-border-sm"></span>
-        </button>
-        
-        <button class="btn btn-primary">
-            <span class="spinner-border spinner-border-sm"></span>
-            Loading..
-        </button>
-        
-        <button class="btn btn-primary" disabled>
-            <span class="spinner-border spinner-border-sm"></span>
-            Loading..
-        </button>
-        
-        <button class="btn btn-primary" disabled>
-            <span class="spinner-grow spinner-grow-sm"></span>
-            Loading..
-        </button>
     </div>
 
 </body>
