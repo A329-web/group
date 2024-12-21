@@ -1,44 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Pagination</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</head>
+<html>
 
 <body>
-    <div class="container">
-        <h2>Pagination </h2>
-        <p> Fall in love with coding</p>
-        <!-- Declare the pagination class -->
-        <ul class="pagination">
+    <h2> Operator</h2>
+    ​<p id="demo"></p>
+    ​<p id="demo1"></p>
+    ​<p id="demo2"></p>
+    ​<p id="demo3"></p>
+    <p id="demo4"></p>
+    ​
+    <script>
+        <!--Addition-->
+        //*use +, -, *, / operators*//
+        var x = 5;
+        var y = 2;
+        var z = x + y;
+        var a = x - y;
+        var b = x * y;
+        var c = x / y;
+        document.getElementById("demo").innerHTML = z;
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo2").innerHTML = b;
+        document.getElementById("demo3").innerHTML = c;
 
-            <!-- Declare the item in the group -->
-            <li class="page-item">
-
-                <!-- Declare the link of the item -->
-                <a class="page-link" href="#">Previous</a>
-            </li>
-
-            <!-- Rest of the pagination items -->
-            <li class="page-item">
-                <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </div>
+        // assignment operator//
+        x += 4;
+        document.getElementById("demo4").innerHTML = x;
+    </script>
 </body>
 
 </html>
+​
